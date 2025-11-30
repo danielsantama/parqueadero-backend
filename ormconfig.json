@@ -1,0 +1,22 @@
+{
+  "type": "mssql",
+  "host": "WORTIZ\\MSSQLSERVER16",
+  "port": 1433,
+  "username": "parqueadero",
+  "password": "parqueadero",
+  "database": "parqueadero",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "src/models/entities/*.ts"
+  ],
+  "migrations": [
+    "src/migrations/*.ts"
+  ],
+  "subscribers": [],
+  "cli": {
+    "entitiesDir": "src/models/entities",
+    "migrationsDir": "src/migrations",
+    "subscribersDir": "src/subscribers"
+  }
+}
